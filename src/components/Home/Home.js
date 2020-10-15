@@ -13,9 +13,9 @@ const useStyles = makeStyles(() => {
       height: "100vh",
       backgroundImage:
         "linear-gradient(90deg, rgba(116,115,133,1) 0%, rgba(218,218,219,1) 35%, rgba(161,168,170,1) 100%), url('https://images.unsplash.com/photo-1490383559880-5003a7baa963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=60')",
+      // backgroundColor: "#232121",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-
       backgroundPosition: "center center",
       backgroundBlendMode: "saturation",
       display: "flex",
@@ -38,13 +38,16 @@ const useStyles = makeStyles(() => {
     button: {
       backgroundColor: "#932432",
       color: "#f3f3f3",
-      padding: "2rem 2rem",
+      padding: "1.5rem 2rem",
       margin: "2rem 2rem",
       width: "100%",
       fontFamily: "'Cousine', monospace",
-      fontSize: "1.5rem",
+      fontSize: "1.25rem",
       borderRadius: "20rem",
       boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
+      "@media (max-width: 719px)": {
+        fontSize: "1rem",
+      },
       "&:hover": {
         backgroundColor: "#DE354C",
       },
@@ -62,8 +65,10 @@ const useStyles = makeStyles(() => {
       "& > h1": {
         fontSize: "3rem",
         color: "#efedec",
-
         fontFamily: "'Cousine', monospace",
+        "@media (max-width: 719px)": {
+          fontSize: "2rem",
+        },
       },
       "& > h2": {
         fontSize: "6rem",
@@ -72,11 +77,17 @@ const useStyles = makeStyles(() => {
         textShadow:
           "2px 5px 1px rgba(0,0,0,0.2), 0px 2px 3px rgba(255,255,255,0.3)",
         margin: "0 0 1rem 0",
+        "@media (max-width: 719px)": {
+          fontSize: "3.5rem",
+        },
       },
       "& > h3": {
         color: "#efedec",
         fontSize: "2rem",
         fontFamily: "'Cousine', monospace",
+        "@media (max-width: 719px)": {
+          fontSize: "1.25rem",
+        },
       },
     },
   };
