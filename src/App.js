@@ -1,14 +1,13 @@
-import React from 'react';
-import Board from "./containers/Board"
-import Navbar from './layouts/Navbar';
-import './App.css';
-
+/* eslint-disable no-unused-vars */
+import React from "react";
+import Navbar from "./layouts/Navbar";
+import "./App.css";
+import { Home, Board } from "./components";
 
 function App() {
   return (
     <>
-    <Navbar />
-    <Board />
+      <Home />
     </>
   );
 }
